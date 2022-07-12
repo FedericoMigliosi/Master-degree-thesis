@@ -16,7 +16,7 @@ import org.xml.sax.SAXException;
 
 import it.polimi.deib.federicomigliosi.InformationAnalyses.*;
 import it.polimi.deib.federicomigliosi.InformationStructure.*;
-//
+
 /**
  * The class SecurityAnalysis contains methods 
  * that perform security analysis on the BPMN diagram;

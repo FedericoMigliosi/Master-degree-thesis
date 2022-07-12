@@ -11,7 +11,7 @@ import org.camunda.bpm.model.bpmn.instance.ItemAwareElement;
 import org.camunda.bpm.model.bpmn.instance.MessageFlow;
 import org.camunda.bpm.model.bpmn.instance.camunda.CamundaProperties;
 import org.camunda.bpm.model.bpmn.instance.camunda.CamundaProperty;
-//
+
 /**
  * The class SecuritySupportMethods contains methods to
  * support the security analysis by parsing the BPMN diagram
