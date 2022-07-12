@@ -1,0 +1,126 @@
+<?xml version = "1.0"?>
+
+<!DOCTYPE treeList [
+	<!ELEMENT treeList (information+)>
+	<!ELEMENT information (dataObjectList,childList)>
+	<!ELEMENT dataObjectList (dataObject*)>
+	<!ELEMENT childList (information*)>
+	<!ELEMENT dataObject (#PCDATA)>
+	<!ATTLIST information name ID #REQUIRED>
+	<!ATTLIST dataObject id CDATA #REQUIRED>
+]>
+
+<treeList>
+<information name="cliente">
+<dataObjectList>
+<dataObject id="DataObjectReference_0bse7w3"/>
+<dataObject id="DataObjectReference_0tv986i"/>
+</dataObjectList>
+<childList>
+	<information name="nome_cliente">
+	<dataObjectList>
+	<dataObject id="DataObjectReference_0lv49lm"/>
+	<dataObject id="DataObjectReference_00wwor9"/>
+	</dataObjectList>
+	<childList></childList>
+	</information>
+	<information name="cognome_cliente">
+	<dataObjectList>
+	<dataObject id="DataObjectReference_0lv49lm"/>
+	<dataObject id="DataObjectReference_00wwor9"/>
+	</dataObjectList>
+	<childList></childList>
+	</information>
+	<information name="indirizzo_cliente">
+	<dataObjectList>
+	<dataObject id="DataObjectReference_0lv49lm"/>
+	<dataObject id="DataObjectReference_00wwor9"/>
+	</dataObjectList>
+	<childList></childList>
+	</information>
+	<information name="metodo_di_pagamento_cliente">
+	<dataObjectList>
+	<dataObject id="DataObjectReference_0lv49lm"/>
+	<dataObject id="DataObjectReference_00wwor9"/>
+	<dataObject id="DataObjectReference_1x3e2ws"/>
+	<dataObject id="DataObjectReference_0okto9x"/>
+	</dataObjectList>
+	<childList>
+		<information name="indirizzo_di_fatturazione">
+		<dataObjectList>
+		<dataObject id="DataObjectReference_1x3e2ws"/>
+		<dataObject id="DataObjectReference_0okto9x"/>
+		</dataObjectList>
+		<childList></childList>
+		</information>
+		<information name="tipologia_di_pagamento_scelto">
+		<dataObjectList>
+		<dataObject id="DataObjectReference_1x3e2ws"/>
+		<dataObject id="DataObjectReference_0okto9x"/>
+		</dataObjectList>
+		<childList></childList>
+		</information>
+	</childList>
+	</information>
+</childList>
+</information>
+<information name="condizioni_di_annullamento">
+<dataObjectList>
+<dataObject id="DataObjectReference_1ezyupr"/>
+</dataObjectList>
+<childList>
+	<information name="termine_ultimo">
+	<dataObjectList>
+	<dataObject id="DataObjectReference_1ezyupr"/>
+	</dataObjectList>
+	<childList></childList>
+	</information>
+	<information name="motivazione">
+	<dataObjectList>
+	<dataObject id="DataObjectReference_1ezyupr"/>
+	<dataObject id="DataObjectReference_0bse7w3"/>
+	<dataObject id="DataObjectReference_0tv986i"/>
+	</dataObjectList>
+	<childList></childList>
+	</information>
+</childList>
+</information>
+<information name="fornitore">
+<dataObjectList></dataObjectList>
+<childList>
+	<information name="nome_fornitore">
+	<dataObjectList>
+	<dataObject id="DataObjectReference_1a1va2i"/>
+	</dataObjectList>
+	<childList></childList>
+	</information>
+	<information name="indirizzo_fornitore">
+	<dataObjectList>
+	<dataObject id="DataObjectReference_1a1va2i"/>
+	</dataObjectList>
+	<childList></childList>
+	</information>
+	<information name="produzione_di_biciclette">
+	<dataObjectList>
+	<dataObject id="DataObjectReference_1a1va2i"/>
+	</dataObjectList>
+	<childList>
+		<information name="modello_di_bicicletta">
+		<dataObjectList>
+		<dataObject id="DataObjectReference_00wwor9"/>
+		<dataObject id="DataObjectReference_0lv49lm"/>
+		<dataObject id="DataObjectReference_1a1va2i"/>
+		</dataObjectList>
+		<childList></childList>
+		</information>
+		<information name="tempi_di_produzione">
+		<dataObjectList>
+		<dataObject id="DataObjectReference_1a1va2i"/>
+		</dataObjectList>
+		<childList></childList>
+		</information>
+	</childList>
+	</information>
+</childList>
+</information>
+</treeList>
