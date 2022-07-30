@@ -303,6 +303,8 @@ public class SecurityAnalysis {
 		return true;
 	}
 	
+	
+	
 		
 	/**
 	 * The method getInformationWithNonRepudiation calculates the information
