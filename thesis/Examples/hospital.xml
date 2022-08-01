@@ -1,0 +1,202 @@
+<?xml version = "1.0"?>
+
+<!DOCTYPE treeList [
+	<!ELEMENT treeList (information+)>
+	<!ELEMENT information (dataObjectList,childList)>
+	<!ELEMENT dataObjectList (dataObject*)>
+	<!ELEMENT childList (information*)>
+	<!ELEMENT dataObject (#PCDATA)>
+	<!ATTLIST information name ID #REQUIRED>
+	<!ATTLIST dataObject id CDATA #REQUIRED>
+]>
+
+<treeList>
+<information name="hospital">
+<dataObjectList></dataObjectList>
+<childList>
+<information name="hospital_name">
+<dataObjectList></dataObjectList>
+<childList></childList>
+</information>
+<information name="patient">
+<dataObjectList>
+<dataObject id="DataObjectReference_06934ra"></dataObject>
+<dataObject id="DataObjectReference_0yopsr2"></dataObject>
+</dataObjectList>
+<childList>
+<information name="patient_name">
+<dataObjectList>
+<dataObject id="DataObjectReference_1uc095m"></dataObject>
+<dataObject id="DataObjectReference_0txto4b"></dataObject>
+</dataObjectList>
+<childList></childList>
+</information>
+<information name="patient_surname">
+<dataObjectList>
+<dataObject id="DataObjectReference_1uc095m"></dataObject>
+<dataObject id="DataObjectReference_0txto4b"></dataObject>
+</dataObjectList>
+<childList></childList>
+</information>
+<information name="patient_SSN">
+<dataObjectList>
+<dataObject id="DataObjectReference_1uc095m"></dataObject>
+<dataObject id="DataObjectReference_0txto4b"></dataObject>
+</dataObjectList>
+<childList></childList>
+</information>
+<information name="diagnosis">
+<dataObjectList>
+<dataObject id="DataObjectReference_1uc095m"></dataObject>
+<dataObject id="DataObjectReference_0txto4b"></dataObject>
+</dataObjectList>
+<childList>
+<information name="diagnosis_date">
+<dataObjectList>
+<dataObject id="DataObjectReference_0tlazip"></dataObject>
+<dataObject id="DataObjectReference_1amnl7l"></dataObject>
+</dataObjectList>
+<childList></childList>
+</information>
+<information name="medical_staff_ID_diagnosis">
+<dataObjectList></dataObjectList>
+<childList></childList>
+</information>
+<information name="dignosis_outcome_desctiption">
+<dataObjectList>
+<dataObject id="DataObjectReference_0tlazip"></dataObject>
+<dataObject id="DataObjectReference_1amnl7l"></dataObject>
+</dataObjectList>
+<childList></childList>
+</information>
+</childList>
+</information>
+<information name="surgical_operation">
+<dataObjectList>
+<dataObject id="DataObjectReference_1uc095m"></dataObject>
+<dataObject id="DataObjectReference_0txto4b"></dataObject>
+</dataObjectList>
+<childList>
+<information name="surgical_operation_date">
+<dataObjectList>
+<dataObject id="DataObjectReference_0tlazip"></dataObject>
+<dataObject id="DataObjectReference_1amnl7l"></dataObject>
+</dataObjectList>
+<childList></childList>
+</information>
+<information name="medical_staff_ID_surgical_operation">
+<dataObjectList></dataObjectList>
+<childList></childList>
+</information>
+<information name="surgical_operation_description">
+<dataObjectList>
+<dataObject id="DataObjectReference_0tlazip"></dataObject>
+<dataObject id="DataObjectReference_1amnl7l"></dataObject>
+</dataObjectList>
+<childList></childList>
+</information>
+<information name="pathology_exam">
+<dataObjectList>
+<dataObject id="DataObjectReference_1bs4f2o"></dataObject>
+<dataObject id="DataObjectReference_1pjuffn"></dataObject>
+</dataObjectList>
+<childList>
+<information name="pathology_exam_date">
+<dataObjectList>
+<dataObject id="DataObjectReference_0xcumuq"></dataObject>
+<dataObject id="DataObjectReference_0t949g4"></dataObject>
+<dataObject id="DataObjectReference_15kzait"></dataObject>
+</dataObjectList>
+<childList></childList>
+</information>
+<information name="pathology_exam_lab_staff_code">
+<dataObjectList>
+<dataObject id="DataObjectReference_0xcumuq"></dataObject>
+<dataObject id="DataObjectReference_0t949g4"></dataObject>
+<dataObject id="DataObjectReference_15kzait"></dataObject>
+</dataObjectList>
+<childList></childList>
+</information>
+<information name="pathologist_ID">
+<dataObjectList>
+<dataObject id="DataObjectReference_0xcumuq"></dataObject>
+<dataObject id="DataObjectReference_0t949g4"></dataObject>
+<dataObject id="DataObjectReference_15kzait"></dataObject>
+</dataObjectList>
+<childList></childList>
+</information>
+<information name="pathology_exam_outcome">
+<dataObjectList>
+<dataObject id="DataObjectReference_0xcumuq"></dataObject>
+<dataObject id="DataObjectReference_0t949g4"></dataObject>
+<dataObject id="DataObjectReference_15kzait"></dataObject>
+</dataObjectList>
+<childList></childList>
+</information>
+</childList>
+</information>
+</childList>
+</information>
+</childList>
+</information>
+<information name="medical_staff">
+<dataObjectList>
+<dataObject id="DataObjectReference_06934ra"></dataObject>
+<dataObject id="DataObjectReference_0yopsr2"></dataObject>
+</dataObjectList>
+<childList>
+<information name="medical_staff_ID">
+<dataObjectList>
+<dataObject id="DataObjectReference_1ps90il"></dataObject>
+<dataObject id="DataObjectReference_18m1ns9"></dataObject>
+</dataObjectList>
+<childList></childList>
+</information>
+<information name="medical_staff_name">
+<dataObjectList></dataObjectList>
+<childList></childList>
+</information>
+<information name="medical_staff_surname">
+<dataObjectList></dataObjectList>
+<childList></childList>
+</information>
+<information name="medical_staff_department">
+<dataObjectList>
+<dataObject id="DataObjectReference_1ps90il"></dataObject>
+<dataObject id="DataObjectReference_18m1ns9"></dataObject>
+</dataObjectList>
+<childList></childList>
+</information>
+</childList>
+</information>
+<information name="laboratory_staff">
+<dataObjectList>
+<dataObject id="DataObjectReference_1bs4f2o"></dataObject>
+<dataObject id="DataObjectReference_1pjuffn"></dataObject>
+</dataObjectList>
+<childList>
+<information name="laboratory_staff_code">
+<dataObjectList></dataObjectList>
+<childList></childList>
+</information>
+<information name="laboratory_staff_name">
+<dataObjectList></dataObjectList>
+<childList></childList>
+</information>
+<information name="laboratory_staff_surname">
+<dataObjectList></dataObjectList>
+<childList></childList>
+</information>
+<information name="assigned_laboratory">
+<dataObjectList></dataObjectList>
+<childList></childList>
+</information>
+<information name="supervisor">
+<dataObjectList></dataObjectList>
+<childList></childList>
+</information>
+</childList>
+</information>
+</childList>
+</information>
+</treeList>
