@@ -388,7 +388,7 @@ public class InformationAnalysis {
 			Collection<DataOutputAssociation> out = catchEvent.getDataOutputAssociations();
 			for(DataOutputAssociation di: out) {						
 				String dataObjectID = di.getTarget().getId();
-				output.addAll(XMLprocessing.fromDataObjectToInformationMultiple(XMLfile, dataObjectID));
+				output.addAll(XMLprocessing.fromDataObjectToInformationSingle(XMLfile, dataObjectID));
 			}
 		}
 		
