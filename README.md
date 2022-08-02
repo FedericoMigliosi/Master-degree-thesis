@@ -23,9 +23,33 @@ For a correct project set up you need to follow [this](https://docs.camunda.org/
 ---
 In this project there are three packages, respectively:
 * InformationStructure<br/>
-    This package
-* InformationAnalyses
-* SecurityAnalyses
+&emsp;This package contains methods and classes to explore the information structure and to relate information with data objects
+* InformationAnalyses<br/>
+&emsp;This package contains methods that allow us to understand how and by whom the information is read or written within the process and the path it follows.
+* SecurityAnalyses<br/>
+&emsp;This package contains methods to test the security requirements of the process.
+
+Now we present some examples of execution using the process saved in `hospital.bpmn` with its respective information `hospital.xml`.
 ```java
-System.out.println("ciao");
+import it.polimi.deib.federicomigliosi.InformationStructure.*;
+import it.polimi.deib.federicomigliosi.InformationAnalyses.*;
+import it.polimi.deib.federicomigliosi.SecurityAnalyses.*;
+
+public class TestArea {
+    public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
+        
+        //Returns the information contained in the data object "Specialistic report" (the method takes as input the ID)
+        XMLprocessing.fromDataObjectToInformationSingle("Examples/hospital.xml", "DataObjectReference_18m1ns9");
+        
+        //Returns the data objects where the input information is stored
+        XMLprocessing.fromInformationToDataObjectSingle("Examples/hospital.xml", "patient_SSN");
+        
+        //Returns the activities reading the input information
+        InformationAnalysis.getActivityThatReadInformation("Examples/hospital.xml", "Examples/hospital.bpmn", "patient_SSN", true);
+        
+        //Returns the participants writing the input information
+        InformationAnalysis.getParticipantThatWriteInformation("Examples/hospital.xml", "Examples/hospital.bpmn", "pathology_exam_outcome", true);
+    
+    }
+}
 ```
