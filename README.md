@@ -14,8 +14,10 @@ To solve the aforementioned problem we have identified some goals to be accompli
 
 ### 👨‍💻 Installation
 ---
-TBD
+In order to execute the code some libraries are required. They enables the parsing of a BPMN process saved in a .bpmn file.
+I our project we use the Camunda workflow engine with the Eclipse IDE.
+
+For a correct project set up you need to follow [this](https://docs.camunda.org/get-started/java-process-app/project-setup/) guide. There is shown how to generate an Eclipse Maven project and how to import the necessary dependencies.
 
 ### 🧐 Usage
 ---
-TBD
