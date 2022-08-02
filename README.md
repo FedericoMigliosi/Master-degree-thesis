@@ -21,3 +21,11 @@ For a correct project set up you need to follow [this](https://docs.camunda.org/
 
 ### 🧐 Usage
 ---
+In this project there are three packages, respectively:
+* InformationStructure<br/>
+    This package
+* InformationAnalyses
+* SecurityAnalyses
+```java
+System.out.println("ciao");
+```
