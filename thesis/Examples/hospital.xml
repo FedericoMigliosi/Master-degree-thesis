@@ -64,7 +64,7 @@
 <dataObjectList></dataObjectList>
 <childList></childList>
 </information>
-<information name="dignosis_outcome_desctiption">
+<information name="diagnosis_outcome_description">
 <dataObjectList>
 <dataObject id="DataObjectReference_0tlazip"></dataObject>
 <dataObject id="DataObjectReference_1amnl7l"></dataObject>
