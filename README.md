@@ -52,6 +52,9 @@ public class TestArea {
     
         //Check the attack harm detection satisfiability of "patient_SSN" information
         SecurityAnalysis.attackHarmDetectionValidationInformation("Examples/hospital.xml", "Examples/hospital.bpmn", "patient_SSN")
+        
+        //Check the integrity satisfiability of "patient_SSN" information
+        SecurityAnalysis.integrityValidationInformation("Examples/hospital.xml", "Examples/hospital.bpmn", "patient_SSN")
     }
 }
 ```
