@@ -427,6 +427,48 @@ public class SecurityAnalysis {
 		
 	}
 	
+	/**
+	 * The method nonRepudiationValidationMessageFlow checks whether the input
+	 * message flow has the NonRepudiation annotation
+	 * @param messageFlowID
+	 * @param BPMNfile
+	 * @return true/false
+	 */
+	public static Boolean nonRepudiationValidationMessageFlow(String messageFlowID, String BPMNfile) {
+		File file = new File(BPMNfile);
+		BpmnModelInstance modelInstance = Bpmn.readModelFromFile(file);
+		return SecuritySupportMethods.hasSecurityAnnotationSwimlane(messageFlowID, modelInstance, "NonRepudiation");
+		
+	}
+	
+	
+	/**
+	 * The method confindetialityValidationInformation checks whether the
+	 * confidentiality requirements is met by the input information, using 
+	 * integrity, attack harm detection and non repudiation
+	 * @param XMLfile
+	 * @param BPMNfile
+	 * @param information
+	 * @return true/false
+	 * @throws ParserConfigurationException
+	 * @throws SAXException
+	 * @throws IOException
+	 */
+	public static Boolean confindetialityValidationInformation(String XMLfile, String BPMNfile, String information)throws ParserConfigurationException, SAXException, IOException {
+		//Extract all the message flows where the input information transit
+		HashSet<String> messageFlowList = InformationAnalysis.fromInformationToMessageFlow(XMLfile, BPMNfile, information);
+		
+		//Check the requirements for each message flow
+		for(String messageFlow: messageFlowList) {
+			if(!integrityValidationMessageFlow(XMLfile,BPMNfile,messageFlow) || 
+				!attackHarmDetectionValidationMessageFlow(XMLfile,BPMNfile,messageFlow) ||
+					! nonRepudiationValidationMessageFlow(messageFlow,BPMNfile)) {
+				return false;
+			}
+		}
+		return true;
+	}
+	
 
 	
 }
