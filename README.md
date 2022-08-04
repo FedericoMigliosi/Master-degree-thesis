@@ -50,6 +50,8 @@ public class TestArea {
         //Returns the participants writing the input information
         InformationAnalysis.getParticipantThatWriteInformation("Examples/hospital.xml", "Examples/hospital.bpmn", "pathology_exam_outcome", true);
     
+        //Check the attack harm detection satisfiability of "patient_SSN" information
+        SecurityAnalysis.attackHarmDetectionValidationInformation("Examples/hospital.xml", "Examples/hospital.bpmn", "patient_SSN")
     }
 }
 ```
