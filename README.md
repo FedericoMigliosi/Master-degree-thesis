@@ -1,4 +1,4 @@
-# Thesis
+# Security analysis of information management in business processes
 This is the repository of Federico Migliosi's master's thesis
 
 ### 📚Introduction
