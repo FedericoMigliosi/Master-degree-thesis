@@ -47,16 +47,24 @@ This package contains methods to test the security requirements of the process.
 
 
 ## 🧐 Usage
-Now we present some examples of execution using the process saved in `hospital.bpmn` with its respective information `hospital.xml`.
+The `Example` folder, as the name suggests, is where all the example processes with their information structure are saved.
+Inside the `TestExamples` package there is a class that can be used to run some example analysis onto the hospital process; this class is also listed below
 ```java
+package it.polimi.deib.federicomigliosi.TestExamples;
+
+import java.io.IOException;
+import javax.xml.parsers.ParserConfigurationException;
+import org.xml.sax.SAXException;
+
 import it.polimi.deib.federicomigliosi.InformationStructure.*;
 import it.polimi.deib.federicomigliosi.InformationAnalyses.*;
 import it.polimi.deib.federicomigliosi.SecurityAnalyses.*;
 
-public class TestArea {
-    public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
-        
-        //Returns the information contained in the data object "Specialistic report" (the method takes as input the ID)
+public class TestExamples {
+
+	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
+
+		//Returns the information contained in the data object "Specialistic report" (the method takes as input the ID)
         XMLprocessing.fromDataObjectToInformationSingle("Examples/hospital.xml", "DataObjectReference_18m1ns9");
         
         //Returns the data objects where the input information is stored
@@ -69,10 +77,11 @@ public class TestArea {
         InformationAnalysis.getParticipantThatWriteInformation("Examples/hospital.xml", "Examples/hospital.bpmn", "pathology_exam_outcome", true);
     
         //Check the attack harm detection satisfiability of "patient_SSN" information
-        SecurityAnalysis.attackHarmDetectionValidationInformation("Examples/hospital.xml", "Examples/hospital.bpmn", "patient_SSN")
+        SecurityAnalysis.attackHarmDetectionValidationInformation("Examples/hospital.xml", "Examples/hospital.bpmn", "patient_SSN");
         
         //Check the integrity satisfiability of "patient_SSN" information
-        SecurityAnalysis.integrityValidationInformation("Examples/hospital.xml", "Examples/hospital.bpmn", "patient_SSN")
-    }
+        SecurityAnalysis.integrityValidationInformation("Examples/hospital.xml", "Examples/hospital.bpmn", "patient_SSN");
+
+	}
 }
 ```
