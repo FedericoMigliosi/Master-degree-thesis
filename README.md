@@ -22,21 +22,31 @@ Later more up-to-date versions shouldn't cause any problems. Both Java and the E
 * For the Eclipse IDE I have use the [official dowloand page](https://www.eclipse.org/downloads/)
 
 ### Installation
+1. Run Eclipse IDE
+2. Click on `File` > `Import`
+3. Chose `Git` > `Projects from Git` and click on `Next`
+4. Click on `Clone URI` and click on `Next`
+    1. In the URI textbox insert the cloning link of the repository
+    2. The `Host`, `Protocol` and `Repository path` boxes should be filled automatically 
+    3. In the `Authentication` section insert the personal GitHub username and password
+    4. Click `Next`
+5. Select the only branch present and click `Next`
+6. In the current window chose where to save the new repository in the local computer
+7. Now a new Tab called `Git repositories` shoud appear in the Eclipse dashboard
+8. Select the newly downloaded project > right click and select `Show in` > `Project Explorer`
+9. A new project should now appear in the project tab
 
-In order to execute the code some libraries are required. They enables the parsing of a BPMN process saved in a .bpmn file.
-For our development and testing phases we have used the Camunda workflow engine with the Eclipse IDE.
+## :computer: Project Structure
+In this project there are three packages, respectively:
+* *InformationStructure*<br/>
+This package contains methods and classes to explore the information structure and to relate information with data objects
+* *InformationAnalyses*<br/>
+This package contains methods that allow us to understand how and by whom the information is read or written within the process and the path it follows.
+* *SecurityAnalyses*<br/>
+This package contains methods to test the security requirements of the process.
 
-For a correct project set up you need to follow [this](https://docs.camunda.org/get-started/java-process-app/project-setup/) guide. There is shown how to generate an Eclipse Maven project and how to import the necessary dependencies.
 
 ## 🧐 Usage
-In this project there are three packages, respectively:
-* InformationStructure<br/>
-&emsp;This package contains methods and classes to explore the information structure and to relate information with data objects
-* InformationAnalyses<br/>
-&emsp;This package contains methods that allow us to understand how and by whom the information is read or written within the process and the path it follows.
-* SecurityAnalyses<br/>
-&emsp;This package contains methods to test the security requirements of the process.
-
 Now we present some examples of execution using the process saved in `hospital.bpmn` with its respective information `hospital.xml`.
 ```java
 import it.polimi.deib.federicomigliosi.InformationStructure.*;
