@@ -2,3 +2,6 @@
 /AutomaticProcessGeneration.java
 /TestWriteAnalysis.java
 /TestReadAnalysis.java
+/TestPropagationAnalysis.java
+/TestReadAnalysisDataObjects.java
+/TestWriteAnalysisDataObjects.java
