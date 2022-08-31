@@ -24,27 +24,27 @@ Later more up-to-date versions shouldn't cause any problems. Both Java and the E
 ### Installation
 1. Run Eclipse IDE
 2. Click on `File` > `Import`
-3. Chose `Git` > `Projects from Git` and click on `Next`
+3. Chose `Git` > `Projects from Git (with smart import)` and click on `Next`
 4. Click on `Clone URI` and click on `Next`
-    1. In the URI textbox insert the cloning link of the repository
-    2. The `Host`, `Protocol` and `Repository path` boxes should be filled automatically 
-    3. In the `Authentication` section insert the personal GitHub username and password
-    4. Click `Next`
-5. Select the only branch present and click `Next`
-6. In the current window chose where to save the new repository in the local computer
-7. Now a new Tab called `Git repositories` shoud appear in the Eclipse dashboard
-8. Select the newly downloaded project > right click and select `Show in` > `Project Explorer`
-9. A new project should now appear in the project tab
+5. In the URI textbox insert the repository link (The `Host`, `Protocol` and `Repository path` boxes should be filled automatically) and click on `Next`
+6. Select the master branch  and click `Next`
+7. Then chose where to save the new repository in the local computer
+8. Now you should be presented with the option of choosing two folders: select only the one with the `Maven` tag on the left
+9. Click `Finish`
+10. Right click on the new project in the `Package Explorer` and select `Maven` > `Update Project`
+11. Click `Ok`
+
 
 ## :computer: Project Structure
-In this project there are three packages, respectively:
+In this project there are four packages, respectively:
 * *InformationStructure*<br/>
 This package contains methods and classes to explore the information structure and to relate information with data objects
 * *InformationAnalyses*<br/>
 This package contains methods that allow us to understand how and by whom the information is read or written within the process and the path it follows.
 * *SecurityAnalyses*<br/>
 This package contains methods to test the security requirements of the process.
-
+* *TestExamples*<br/>
+This package contains examples to analyse the hospital business process
 
 ## 🧐 Usage
 The `Example` folder, as the name suggests, is where all the example processes with their information structure are saved.
