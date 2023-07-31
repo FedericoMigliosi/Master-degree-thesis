@@ -13,11 +13,11 @@ To solve the aforementioned problem we have identified some goals to be accompli
 
 ## 👨‍💻 Getting started
 ### Prerequisites
-The software was developed and tested in `macOS Montgomery` with the Intel processor. The used Java and Eclipse verions ar the following:
+This software was developed and tested in `macOS Montgomery` with the Intel processor. The used Java and Eclipse verions are the following:
 * `Java version "17.0.2"`
 * `Eclipse version 2022-03 (4.23.0)`
 
-Later more up-to-date versions shouldn't cause any problems. Both Java and the Eclispse IDE can be installed as follows:
+Later more up-to-date versions should not cause any problems. Both Java and the Eclispse IDE can be installed using the following links:
 * For Java install the JDK (I have used [this](https://adoptopenjdk.net/) link for the installation)
 * For the Eclipse IDE I have use the [official dowloand page](https://www.eclipse.org/downloads/)
 
