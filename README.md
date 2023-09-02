@@ -15,8 +15,8 @@ This software was developed and tested in `macOS Montgomery` with the Intel proc
 * `Eclipse version 2022-03 (4.23.0)`
 
 Later more up-to-date versions should not cause any problems. Both Java and the Eclispse IDE can be installed using the following links:
-* For Java install the JDK (I have used [this](https://adoptopenjdk.net/) link for the installation)
-* For the Eclipse IDE I have use the [official dowloand page](https://www.eclipse.org/downloads/)
+* [Java JDK](https://adoptopenjdk.net/)
+* [Eclipse IDE](https://www.eclipse.org/downloads/)
 
 ### Installation
 1. Run Eclipse IDE
@@ -37,11 +37,11 @@ In this project there are four packages, respectively:
 * *InformationStructure*<br/>
 This package contains methods and classes to explore the information structure and to relate information with data objects
 * *InformationAnalyses*<br/>
-This package contains methods that allow us to understand how and by whom the information is read or written within the process and the path it follows.
+This package contains methods that allow to understand how and by whom the information is read or written within the process and the path it follows.
 * *SecurityAnalyses*<br/>
-This package contains methods to test the security requirements of the process.
+This package contains methods to test process security requirements.
 * *TestExamples*<br/>
-This package contains examples to analyse the hospital business process
+This package contains examples to analyse a hospital business process.
 
 ## 🧐 Usage
 The `Example` folder, as the name suggests, is where all the example processes with their information structure are saved.
